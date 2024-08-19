@@ -9,7 +9,7 @@ const useStyles = makeStyles({
   },
   text: {
     backgroundColor: tokens.colorBrandBackground2,
-    color: tokens.colorBrandBackground2,
+    color: tokens.colorBrandForeground2,
     fontSize: "20px",
     border: "1px",
     borderRadius: "5px",
