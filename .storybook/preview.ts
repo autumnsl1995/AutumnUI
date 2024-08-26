@@ -1,6 +1,9 @@
 import type { Preview } from "@storybook/react";
 import { useExportToSandboxButton } from "../docs/sandbox/decorators/with-export-to-sandbox-button";
-export const decorators = [useExportToSandboxButton];
+import { withAutumnProvider } from "../docs/src/withAutumnProvider";
+import "../docs/sandbox/styles.css";
+import { AutumnDocsPage } from "../docs/src/AutumnDocsPage.stories";
+export const decorators = [withAutumnProvider, useExportToSandboxButton];
 
 const preview: Preview = {
   tags: ["autodocs"],
@@ -11,10 +14,20 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
+    // 代码编辑器
     exportToSandbox: {
       requiredDependencies: {
         react: "^18",
         "react-dom": "^18",
+      },
+    },
+    docs: {
+      toc: {
+        title: "Contents",
+      },
+      page: AutumnDocsPage,
+      canvas: {
+        withToolbar: false,
       },
     },
   },
