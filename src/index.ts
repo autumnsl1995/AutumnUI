@@ -5,3 +5,4 @@ export * from "./components/Header";
 export * from "./components/Page";
 export * from "./components/AutumnProvider";
 export * from "./components/Divider";
+export * from "./components/Text";

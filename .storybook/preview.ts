@@ -3,6 +3,7 @@ import { useExportToSandboxButton } from "../docs/sandbox/decorators/with-export
 import { withAutumnProvider } from "../docs/src/withAutumnProvider";
 import "../docs/sandbox/styles.css";
 import { AutumnDocsPage } from "../docs/src/AutumnDocsPage.stories";
+import { THEME_ID } from "../docs/theme-addon/constants";
 export const decorators = [withAutumnProvider, useExportToSandboxButton];
 
 const preview: Preview = {
@@ -32,5 +33,7 @@ const preview: Preview = {
     },
   },
 };
+
+export const initialGlobals = { [THEME_ID]: undefined };
 
 export default preview;

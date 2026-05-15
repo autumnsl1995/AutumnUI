@@ -197,14 +197,14 @@ function getExample(demoData: Data) {
 
 function getApp() {
   const code = dedent`
-    import { FishProvider, webLightTheme } from 'autumn-ui';
+    import { AutumnProvider, webLightTheme } from 'autumn-ui';
     import { default as Example } from './example';
 
     const App = () => {
         return (
-          <FishProvider theme={webLightTheme}>
+          <AutumnProvider theme={webLightTheme}>
             <Example />
-          </FishProvider>
+          </AutumnProvider>
         );
     };
 

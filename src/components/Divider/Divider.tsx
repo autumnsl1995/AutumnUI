@@ -6,7 +6,7 @@ import {
   useBaseStyles,
   useHorizontalStyles,
   useVerticalStyles,
-} from "./useDividerStyles";
+} from "./useDividerStyles.style";
 
 /**
  * Divider组件
